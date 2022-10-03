@@ -1,3 +1,24 @@
+
+# Zadanie dla my music
+
+Formulardz do dodawania nowych kontrahentów.
+
+## Technologie
+ - Scss
+ - React
+ - TypeScript
+
+
+Przykładowy NIP i pesel z generatorów online do sprawdzenia validacji formularza.
+
+### `NIP: 7362769822`
+### `PESEL: 74062856996`
+
+## Screenshots
+![App Screenshot](./public/ss1.png)
+![App MobileScreenshot](./public/ss2.png)
+![App ErrorScreenshot](./public/ss3.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
