@@ -1,0 +1,25 @@
+@import "./mixins";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+input[type="file"] {
+    border: 2px solid royalblue;
+    width: 15vw;
+    @include devices(tablet) {
+        width: 100%;
+    }
+    @include devices(mobile) {
+        width: 100%;
+    }
+}
+
+.btn:hover{
+    color: royalblue;
+    border-color: royalblue;
+    background-color: white;
+}

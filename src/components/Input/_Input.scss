@@ -1,0 +1,50 @@
+@import "../../styles/_mixins.scss";
+.form__label{
+  margin: 20px;
+  width: 15vw;
+  color: gray;
+  position: relative;
+  @include devices(tablet) {
+    width: 100%;
+    margin: 30px;
+  }
+  @include devices(mobile) {
+    width: 100%;
+    margin: 15px;
+  }
+  .form__input{
+    padding: 10px;
+    outline: none;
+    transition: 0.5s;
+  }
+  .input__text{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-size: 1em;
+  }
+  .form__text{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-size: 1em;
+    pointer-events: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  .input__text:valid ~ span,
+  .input__text:focus ~ span {
+    color: royalblue;
+    transform: translateX(15px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: white;
+    border-left: 1px royalblue solid;
+    border-right: 1px royalblue solid;
+    letter-spacing: 0.2em;
+  }
+
+  .input__text:valid,
+  .input__text:focus{
+    border-color: royalblue;
+  }}
