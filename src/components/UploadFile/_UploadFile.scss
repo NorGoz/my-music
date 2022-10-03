@@ -1,0 +1,19 @@
+@import "../../styles/_mixins.scss";
+.form__label {
+
+  .input__img{
+    display: flex;
+    border: 2px solid royalblue;
+    width: 10vw;
+    height: 10vw;
+    margin: 10px auto;
+    @include devices(tablet) {
+      width: 20vw;
+      height: 20vw;
+    }
+    @include devices(mobile) {
+      width: 30vw;
+      height: 30vw;
+    }
+  }
+}

@@ -25,7 +25,6 @@ export function Form({children, functionToForm, formInitialValues}: Props) {
     };
     const handleSubmit = (e: React.SyntheticEvent) => {
         e.preventDefault();
-        console.log(form,'form w FORM');
         functionToForm(form);
         setForm(formInitialValues);
     };

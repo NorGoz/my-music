@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react';
 import {FormContext} from "../Form/Form";
+import './_UploadFile.scss';
 
 export function UploadFile() {
     const [file, setFile] = useState(null);
@@ -17,22 +18,18 @@ export function UploadFile() {
         setFile(fileLoaded);
     };
     return (
-        <div>
+        <div className='form__label'>
             <input
+                className='form__input'
                 type="file"
+                required={true}
                 onChange={handleChange}
-                accept="image/jpg, image/png"
+                accept="image/jpeg, image/png"
             />
             <img
                 src={file ? file : ''}
                 alt='Twoje zdjęcie'
-                style={{
-                    display: 'flex',
-                    border: '2px solid royaleblue',
-                    width: '150px',
-                    height: '150px',
-                    margin: '10px auto'
-                }}
+                className='input__img'
             />
         </div>
     );
